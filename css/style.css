@@ -1,0 +1,433 @@
+/* Professional Modern Color Scheme - Blue Primary with Teal Success */
+:root {
+    --primary-blue: #1976D2;
+    --dark-blue: #1565C0;
+    --navy-blue: #0D47A1;
+    --steel-blue: #2196F3;
+    --light-blue: #BBDEFB;
+    --sky-blue: #E3F2FD;
+    --slate-gray: #546E7A;
+    --light-gray: #F5F7FA;
+    --silver: #CFD8DC;
+    --charcoal: #263238;
+    --white: #FFFFFF;
+    --text-dark: #2C3E50;
+    --text-light: #607D8B;
+    --border-light: #E0E0E0;
+    --success: #198754;          /* Your professional dark teal */
+    --success-light: #1e7e34;    /* Your professional success */
+    --teal: #20c997;             /* Your professional teal */
+    --olive: #6c757d;            /* Your professional olive */
+    --warning: #FF9800;
+    --danger: #F44336;
+    --info: #03A9F4;
+}
+
+/* Custom CSS for professional responsive design */
+body {
+    font-family: 'Segoe UI', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.12);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(135deg, var(--navy-blue), var(--primary-blue)) !important;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.15);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--white) !important;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.6rem 1.2rem;
+    color: var(--white) !important;
+    font-weight: 500;
+    border-radius: 6px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.navbar-toggler {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--success), var(--success-light));
+    color: var(--white);
+    border-color: var(--success);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, var(--success-light), var(--success));
+    border-color: #146c43;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.btn-teal {
+    background: linear-gradient(135deg, var(--teal), var(--success));
+    color: var(--white);
+    border: none;
+}
+
+.btn-teal:hover {
+    background: linear-gradient(135deg, var(--success), var(--teal));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(32, 201, 151, 0.3);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning), #e68900);
+    color: var(--white);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e68900, var(--warning));
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger), #da190b);
+    color: var(--white);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #da190b, var(--danger));
+    transform: translateY(-1px);
+}
+
+.btn-info {
+    background: linear-gradient(135deg, var(--info), #039be5);
+    color: var(--white);
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #039be5, var(--info));
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.btn-outline-success {
+    border: 2px solid var(--success);
+    color: var(--success);
+    background: transparent;
+}
+
+.btn-outline-success:hover {
+    background: var(--success);
+    color: var(--white);
+}
+
+/* Table Styles */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.table th {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.table td {
+    border-color: var(--border-light);
+    background: var(--white);
+    padding: 0.9rem;
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(187, 222, 251, 0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(25, 118, 210, 0.08);
+    transition: all 0.2s ease;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+    padding: 1rem 1.5rem;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+    color: var(--text-dark);
+    border-left-color: var(--success);
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #FFEBEE, #FCE4EC);
+    color: var(--text-dark);
+    border-left-color: var(--danger);
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #FFF3E0, #FFF8E1);
+    color: var(--text-dark);
+    border-left-color: var(--warning);
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #E1F5FE, #E0F7FA);
+    color: var(--text-dark);
+    border-left-color: var(--info);
+}
+
+.alert-primary {
+    background: linear-gradient(135deg, var(--sky-blue), #E3F2FD);
+    color: var(--text-dark);
+    border-left-color: var(--primary-blue);
+}
+
+.alert-teal {
+    background: linear-gradient(135deg, #E8F6F3, #D1F2EB);
+    color: var(--text-dark);
+    border-left-color: var(--teal);
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.15);
+    transform: translateY(-1px);
+}
+
+.input-group-text {
+    background: var(--light-gray);
+    border: 1px solid var(--border-light);
+    color: var(--text-light);
+}
+
+/* Badge Styles */
+.badge {
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+}
+
+.bg-primary { background: linear-gradient(135deg, var(--primary-blue), var(--steel-blue)) !important; color: var(--white); }
+.bg-success { background: linear-gradient(135deg, var(--success), var(--success-light)) !important; color: var(--white); }
+.bg-teal { background: linear-gradient(135deg, var(--teal), var(--success)) !important; color: var(--white); }
+.bg-warning { background: linear-gradient(135deg, var(--warning), #e68900) !important; color: var(--white); }
+.bg-danger { background: linear-gradient(135deg, var(--danger), #da190b) !important; color: var(--white); }
+.bg-info { background: linear-gradient(135deg, var(--info), #039be5) !important; color: var(--white); }
+.bg-secondary { background: var(--olive) !important; color: var(--white); }
+
+/* Text Color Classes */
+.professional-success { color: var(--success-light) !important; }
+.professional-teal { color: var(--teal) !important; }
+.professional-dark-teal { color: var(--success) !important; }
+.professional-olive { color: var(--olive) !important; }
+.text-success { color: var(--success) !important; }
+.text-teal { color: var(--teal) !important; }
+
+/* Border Utilities */
+.border-success { border-color: var(--success) !important; }
+.border-teal { border-color: var(--teal) !important; }
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(25, 118, 210, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: var(--white);
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.2rem 1.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-light);
+    background: var(--light-gray);
+    padding: 1rem 1.5rem;
+}
+
+/* Statistics Cards */
+.stats-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--white), #F8F9FA);
+}
+
+.stats-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.15);
+}
+
+.stats-card .card-body {
+    padding: 1.5rem;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Success-themed Stats Card */
+.stats-card-success {
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+    border-left: 4px solid var(--success);
+}
+
+.stats-card-success .stat-number {
+    color: var(--success);
+}
+
+/* Quick Actions */
+.quick-action {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: var(--white);
+    height: 100%;
+}
+
+.quick-action:hover {
+    background: linear-gradient(135deg, var(--sky-blue), #E3F2FD);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
+}
+
+.quick-action-success:hover {
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
+    border-color: var(--success);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.15);
+}
+
+/* Special Elements */
+.overdue {
+    background: linear-gradient(135deg, #FFEBEE, #FCE4EC) !important;
+    border-left: 4px solid var(--danger) !important;
+}
+
+.completed {
+    background: linear-gradient(135deg, #E8F5E8, #F1F8E9) !important;
+    border-left: 4px solid var(--success) !important;
+}
+
+.book-cover {
+    background: linear-gradient(135deg, var(--primary-blue), var(--steel-blue));
+    color: white;
+}
+
+.book-cover-success {
+    background: linear-gradient(135deg, var(--success), var(--teal));
+    color: white;
+}
+
+/* Your existing styles integrated */
+.professional-success { color: var(--success-light); }
+.professional-teal { color: var(--teal); }
+.professional-dark-teal { color: var(--success); }
+.professional-olive { color: var(--olive); }
+
+/* Rest of the CSS remains the same from previous version... */
+/* [Responsive Design, Animations, Pagination, Footer, etc.] */

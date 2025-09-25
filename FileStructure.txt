@@ -1,0 +1,21 @@
+Lab_Exam_LibSys/
+├── index.php
+├── dashboard.php
+├── students.php
+├── books.php
+├── authors.php
+├── categories.php
+├── borrow_return.php
+├── librarian.php
+├── api/
+│   ├── students_api.php
+│   ├── books_api.php
+│   ├── authors_api.php
+│   ├── categories_api.php
+│   └── borrow_api.php
+├── config/
+│   └── database.php
+├── css/
+│   └── style.css
+└── sql/
+    └── database.sql
