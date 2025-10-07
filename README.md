@@ -163,7 +163,6 @@ This project is licensed under the MIT License. See the included `LICENSE` file 
 
 ## Contact
 Developer: jlstaana
-Email: staanajulianalouise44@gmail.com
 GitHub: https://github.com/jlstaana
 
 ---
