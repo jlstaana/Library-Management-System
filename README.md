@@ -165,12 +165,5 @@ This project is licensed under the MIT License. See the included `LICENSE` file 
 Developer: jlstaana
 GitHub: https://github.com/jlstaana
 
----
 
-If you'd like, I can also:
-- Add a short CONTRIBUTING.md and CODE_OF_CONDUCT.md
-- Generate a quick API usage example (curl or Postman collection)
-- Add a small developer quick-start script
-
-Let me know which (if any) you'd like next.
 
